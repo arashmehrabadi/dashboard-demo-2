@@ -1,0 +1,119 @@
+:root {
+    --menu_bgcolor: #FFFFFF;
+    --menu_two_bgcolor: #FFFEE8;
+    --bgcolor_content: #F8F8F8;
+    --inner_bgcolor_content: #FFFFFF;
+    --click-bgcolor: radial-gradient(129.34% 1396.27% at 22.84% 50.65%, #FD822D 0%, #F74B49 100%);
+    --click_delete_bgcolor: #F8F8F8;
+    --click_delete-color: #F74B49;
+    --inputs_bgcolor: #F8F8F8;
+    --li_bgcolor_of_menu: linear-gradient(270.29deg, rgba(253, 130, 45, 0.16) 0.26%, rgba(253, 130, 45, 0) 99.81%);
+    --menu_color: #89877B;
+    --li_bgcolor_of_list: radial-gradient(10.89% 2374.44% at 0% 50.77%, rgba(254, 169, 12, 0.128) 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(10.94% 2385.8% at 100% 50.77%, rgba(247, 75, 73, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+    --content_color: #3D3B30;
+    --numbers-clicked_menu_color: #11100C;
+    --border_color: linear-gradient(90deg, #FEA90C 0%, #F74B49 100%);
+
+}
+
+.menu {
+    width: 20%;
+    min-width: 238px;
+    min-height: 100vh;
+    transition: all .5s;
+    /* position: fixed; */
+
+}
+
+.menu .account {
+    margin-bottom: 40px;
+}
+.menu .account img{
+    transition: all .5s;
+}
+
+.menu .arrow-back {
+    border-radius: 8px 0 0 8px;
+    /* background-color: var(--menu_two_bgcolor); */
+    z-index: 5;
+}
+
+
+.menu .account .change-width {
+    width: 24px;
+    height: 24px;
+    background-color: var(--menu_bgcolor);
+    /* position: relative; */
+}
+
+.menu .account .change-width svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+}
+
+.menu .account .a-title {
+    transition: all .5s;
+    margin-top: 33px;
+}
+
+.menu .account .a-title p {
+    color: var(--numbers-clicked_menu_color);
+    font-weight: 500;
+    margin-bottom: 4px;
+
+}
+
+.menu .account .a-title span {
+    color: var(--menu_color);
+}
+
+.menu li.big-width {
+    color: var(--menu_color);
+    cursor: pointer;
+    padding: 0 12px;
+    margin: 0 12px 0 0;
+    border-radius: 17px;
+}
+
+.menu li:not(.menu li.clicked) {
+    font-size: 16px;
+
+}
+
+.menu li.clicked {
+    font-weight: 700;
+    color: var(--numbers-clicked_menu_color);
+    background-image: var(--li_bgcolor_of_menu);
+
+}
+
+.menu li:hover:not(.menu li.clicked-two) {
+    color: var(--content_color);
+    filter: invert(10%);
+}
+.menu li:hover:not(.menu li.clicked) {
+    color: var(--content_color);
+    /* filter: invert(10%); */
+}
+/* .menu li:hover .menu li .icon svg{
+    display: none;
+} */
+
+.menu li .icon {
+    margin-left: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20px;
+}
+
+
+
+
+
+
+

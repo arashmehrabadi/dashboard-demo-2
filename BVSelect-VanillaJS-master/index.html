@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="BVSelect Jquery">
+  <meta name="author" content="Bruno Vieira">
+
+  <title>BVSelect - VanillaJS Fully Customizable SelectBox</title>
+
+  <!-- BVSelect Plugin Style -->
+    <link rel="stylesheet" type="text/css" href="css/bvselect.css">
+
+  <!-- *** OPTIONAL *** -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <!-- DEMO ONLY -->
+    <link href="demo-template/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      html,body {  font-family:Arial;  }
+      .btn-light { color: #212529; background-color: #f8f9fa; border-color: #f8f9fa; border: 1px solid #ececec; }
+    </style>
+
+</head>
+<body style="min-height:1000px;">
+   <div class="containe">
+
+    <div class="card  my-5 py-4 text-center" style=" border:0px; margin-top:150px!important; position: relative;">
+      <div class="card-body">
+        <p class="text-white m-0"><img style="max-width:500px; width:100%;" src="demo-template/images/BV.png"></p>
+        <a target="_blanK" href="https://github.com/BMSVieira/BVSelect-VanillaJS" class="btn btn-light">View on GitHub</a>
+        <a target="_blanK" href="https://github.com/BMSVieira/BVSelect" class="btn btn-light">Check JQuery Version</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 mb-5" style="border:0px;">
+        <div class="card h-100" style="border:0px;">
+          <div >
+          <h3>Basic:</h3>
+              <select id="selectbox">
+                  <option value="pt_1">Option 1</option>
+                  <option value="en_2" >Option 2 </option>
+                  <option value="es_3" disabled>Option 3 (Disabled)</option>
+                  <option value="ch_4">Option 4</option>
+                  <option value="5">Option 5</option>
+              </select>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5" style="border:0px;">
+        <div class="card h-100" style="border:0px;">
+          <div >
+          <h3>Searchbox:</h3>
+              <select id="selectbox2">
+                  <option value="pt_1">Cristiano Ronaldo</option>
+                  <option value="en_2">Lionel Messi </option>
+                  <option value="es_3" disabled>Neymar Jr. (Disabled)</option>
+                  <option value="ch_4">Ronaldinho</option>
+                  <option value="5">Luis Figo</option>
+              </select>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5" style="border:0px;">
+        <div class="card h-100" style="border:0px;">
+          <div >
+          <h3>Multiple:</h3>
+              <select id="selectbox6" multiple="">
+                  <option data-icon="fa fa-align-justify" value="pt_1">Item 1</option>
+                  <option data-icon="fa fa-address-book" value="en_2" >Item 2 </option>
+                  <option data-icon="fa fa-hashtag" value="es_3" disabled>Item 3 (Disabled)</option>
+                  <option data-icon="fa fa-beer" value="ch_4">Item 4</option>
+                  <option data-icon="fa fa-air-freshener" value="5">Item 5</option>
+              </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 mb-5" style="border:0px;">
+        <div class="card h-100" style="border:0px;">
+          <div >
+          <h3>Images:</h3>
+              <select id="selectbox3">
+                  <option value="##" data-separator="true">Portugal</option>
+                  <option data-img="https://img.icons8.com/color/2x/portugal.png" value="5">Luis Figo</option>
+                  <option data-img="https://img.icons8.com/color/2x/portugal.png" value="pt_1">Cristiano Ronaldo</option>
+                  <option value="##" data-separator="true">Argentina</option>                  
+                  <option data-img="https://img.icons8.com/color/2x/argentina.png" value="en_2" >Lionel Messi </option>
+                  <option value="##" data-separator="true">Brasil</option>
+                  <option data-img="https://img.icons8.com/color/2x/brazil.png" value="es_3" disabled>Neymar Jr. (Disabled)</option>
+                  <option data-img="https://img.icons8.com/color/2x/brazil.png" value="ch_4">Ronaldinho</option>
+              </select>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5" style="border:0px;">
+        <div class="card h-100" style="border:0px;">
+          <div >
+          <h3>Icons:</h3>
+              <select id="selectbox4">
+                  <option data-icon="fa fa-arrow-right" value="pt_1">Cristiano Ronaldo</option>
+                  <option data-icon="fa fa-tshirt" value="en_2" >Lionel Messi </option>
+                  <option data-icon="fa fa-futbol" value="es_3" disabled>Neymar Jr. (Disabled)</option>
+                  <option data-icon="fa fa-chevron-circle-right" value="ch_4">Ronaldinho</option>
+                  <option data-icon="fa fa-hashtag" value="5">Luis Figo</option>
+              </select>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5" style="border:0px;">
+        <div class="card h-100" style="border:0px;">
+          <div >
+          <h3>Mixed:</h3>
+              <select id="selectbox5">
+                  <option data-img="https://img.icons8.com/color/2x/portugal.png" value="pt_1">Cristiano Ronaldo</option>
+                  <option data-icon="fa fa-address-book" data-img="https://img.icons8.com/color/2x/argentina.png" value="en_2" >Lionel Messi </option>
+                  <option data-icon="fa fa-hashtag" value="es_3" disabled>Neymar Jr. (Disabled)</option>
+                  <option data-img="https://img.icons8.com/color/2x/brazil.png" value="ch_4">Ronaldinho</option>
+                  <option data-icon="fa fa-futbol" value="5">Luis Figo</option>
+              </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="js/bvselect.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+        var demo1 = new BVSelect({
+          selector: "#selectbox",
+          searchbox: false,
+          offset: false
+        });
+        var demo2 = new BVSelect({
+          selector: "#selectbox2",
+          searchbox: true,
+          search_autofocus: true,
+          offset: true,
+          width: "100%",
+          placeholder: "Select Option",
+          search_placeholder: "Search...",
+          breakpoint: 750
+        });
+        var demo3 = new BVSelect({
+          selector: "#selectbox3",
+          searchbox: true,
+          offset: true
+        });
+        var demo4 = new BVSelect({
+          selector: "#selectbox4",
+          searchbox: true,
+          offset: true
+        });
+        var demo5 = new BVSelect({
+          selector: "#selectbox5",
+          searchbox: true,
+          offset: true
+        });     
+        var demo6 = new BVSelect({
+          selector: "#selectbox6",
+          searchbox: true,
+          search_autofocus: false,
+          offset: true,
+          width: "100%",
+          search_placeholder: "Search..."
+        });  
+  });
+
+  </script>
+</body>
+
+</html>
